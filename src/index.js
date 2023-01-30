@@ -1,14 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import { RouterProvider } from 'react-router-dom';
 import App from './App';
+import './index.css';
 import reportWebVitals from './reportWebVitals';
-
+import router from './Routes/Routes';
+import './firebase/config';
+import GlobleStyle from './GlobleStyle/GlobleStyle';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <React.StrictMode>
+        <RouterProvider router={router}>
+            <GlobleStyle>
+                <App />
+            </GlobleStyle>
+        </RouterProvider>
+    </React.StrictMode>,
 );
 
 // If you want to start measuring performance in your app, pass a function
