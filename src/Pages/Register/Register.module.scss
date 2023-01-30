@@ -1,0 +1,30 @@
+.glass {
+    background: rgba(225, 225, 255, 0.05);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px #4747470b;
+    border: 1px solid rgba(225, 225, 255, 0.3);
+    @apply border-4 border-gray-50 shrink-0  w-[30%] rounded-3xl py-20 px-7 min-w-max;
+}
+.profile-image {
+    @apply border-4 border-gray-50 w-[120px] rounded-full shadow-lg cursor-pointer my-2;
+    @apply hover:border-gray-200;
+}
+.textblox {
+    caret-color: #ff6a6a;
+    font-size: 1.2rem;
+    @apply border-0 px-5 py-2 rounded-xl w-3/4 shadow-sm text-lg;
+    &:focus {
+        focus: outline-none;
+    }
+}
+
+.btn {
+    text-align: center;
+    @apply border bg-indigo-500 w-4/5 py-4 rounded-lg text-gray-50 text-xl shadow-sm text-center;
+    &:hover {
+        background-color: #ff6a6a;
+    }
+}
+input[type='file'] {
+    display: none;
+}
